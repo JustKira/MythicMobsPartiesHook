@@ -21,8 +21,10 @@ public class InSamePartyCondition implements IEntityComparisonCondition {
             return false;
         }
         PartiesAPI api = Parties.getApi();
+
         PartyPlayer casterPlayer = api.getPartyPlayer(caster.getUniqueId());
         PartyPlayer targetPlayer = api.getPartyPlayer(target.getUniqueId());
+
         if (!targetPlayer.isInParty()) {
             return false;
         }

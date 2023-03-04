@@ -38,9 +38,9 @@ public final class MythicMobsPartiesHook extends JavaPlugin implements Listener 
     public void onMythicConditionLoad(MythicConditionLoadEvent event)	{
         log.info("MythicConditionLoadEvent called for condition " + event.getConditionName());
 
-        if(event.getConditionName().equalsIgnoreCase("EXAMPLE"))	{
+        if(event.getConditionName().equalsIgnoreCase("InSameParty"))	{
             event.register(new InSamePartyCondition(event.getConfig()));
-            log.info("-- Registered condition!");
+            log.info("-- Registered InSameParty condition!");
         }
     }
     @Override
