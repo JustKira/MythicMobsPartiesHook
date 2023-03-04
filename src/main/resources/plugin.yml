@@ -1,0 +1,5 @@
+name: MythicMobsPartiesHook
+version: '${project.version}'
+main: justkira.mythicmobspartieshook.MythicMobsPartiesHook
+api-version: 1.19
+depend: [Parties]
